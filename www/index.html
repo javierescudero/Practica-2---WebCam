@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Display WebCam Stream</title>
+	
+	<style>
+		#container {
+			margin: 0px auto; /*0px margen izquierdo y auto=igual al anterior*/
+			width: 500px;
+			height: 375px;
+			border: 10px #333 solid;
+		}
+		/*Controlador de la webCam*/
+		#videoElement {
+			width: 500px;
+			height: 375px;
+			background-color: #666;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<!-- autoplay es true por defecto, solo se coloca autoplay="false" cuando se deshabilite-->
+		<video autoplay="true" id="videoElement"></video>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
